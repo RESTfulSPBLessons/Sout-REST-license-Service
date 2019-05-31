@@ -3,13 +3,13 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.antonromanov.firstCRUD</groupId>
-	<artifactId>firstcrud</artifactId>
+	<groupId>club.apibank.moedelo</groupId>
+	<artifactId>moedelo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>SOUT License REST Service</name>
-	<description>Demo project for Spring Boot</description>
+	<name>MoeDelo</name>
+	<description>Test MoeDelo project</description>
 
 
 
