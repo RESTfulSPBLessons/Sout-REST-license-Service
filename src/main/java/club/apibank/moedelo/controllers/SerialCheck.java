@@ -1,8 +1,8 @@
-package club.apibank.smartengines.controllers;
+package club.apibank.moedelo.controllers;
 
 import club.apibank.connectors.smartengines.model.AttachmentType;
 import club.apibank.connectors.smartengines.service.Recognition;
-import club.apibank.smartengines.services.InputStreamExample;
+import club.apibank.moedelo.services.InputStreamExample;
 import org.springframework.web.bind.annotation.*;
 import java.io.IOException;
 

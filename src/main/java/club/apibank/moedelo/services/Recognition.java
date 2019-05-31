@@ -1,4 +1,4 @@
-package club.apibank.smartengines.services;
+package club.apibank.moedelo.services;
 
 import club.apibank.smartengines.model.DocType;
 import club.apibank.smartengines.model.RecognitionResult;

@@ -1,4 +1,4 @@
-package club.apibank.smartengines.model;
+package club.apibank.moedelo.model;
 // This Project created by Anton Romanov (www.antonromanov.com) 05.03.2018 at 16:49
 
 import java.sql.Date;

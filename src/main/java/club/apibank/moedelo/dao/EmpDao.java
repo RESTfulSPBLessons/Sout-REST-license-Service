@@ -1,4 +1,4 @@
-package club.apibank.smartengines.dao;
+package club.apibank.moedelo.dao;
 
 public interface EmpDao {
 

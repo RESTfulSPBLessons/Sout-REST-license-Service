@@ -1,4 +1,4 @@
-package club.apibank.smartengines.model;
+package club.apibank.moedelo.model;
 
 
 import java.sql.Date;
