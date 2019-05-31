@@ -1,4 +1,4 @@
-package com.antonromanov.firstcrud.firstcrud;
+package club.apibank.smartengines;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
