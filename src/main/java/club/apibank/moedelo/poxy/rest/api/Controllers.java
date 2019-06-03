@@ -1,12 +1,11 @@
-package com.logicbig.rest.api;
-
+package club.apibank.moedelo.poxy.rest.api;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 
-@Path("/orders")
-public class OrderService {
+@Path("/api")
+public class Controllers {
 
     @GET
     public String getOrders() {
