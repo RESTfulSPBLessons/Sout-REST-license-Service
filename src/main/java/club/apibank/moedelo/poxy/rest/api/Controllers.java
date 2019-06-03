@@ -1,8 +1,10 @@
 package club.apibank.moedelo.poxy.rest.api;
 
-import javax.ws.rs.GET;
-import javax.ws.rs.Path;
-import javax.ws.rs.PathParam;
+
+import java.net.URI;
+import java.net.http.HttpClient;
+import java.net.http.HttpRequest;
+import java.net.http.HttpResponse;
 
 @Path("/api")
 public class Controllers {
@@ -13,10 +15,26 @@ public class Controllers {
     }
 
     @GET
-    @Path("/{orderId}")
-    public String getOrderById(
-            @PathParam("orderId") String orderId) {
-        return "returning order with id " + orderId;
+    @Path("/send")
+    public String getOrderById() {
+
+
+        try {
+            HttpClient httpClient = HttpClient.newHttpClient();
+
+            HttpRequest httpRequest = HttpRequest.
+                    newBuilder().uri(new URI("http://www.codenuclear.com")).GET().build();
+
+            HttpResponse <String> httpResponse = httpClient.send(httpRequest, HttpResponse.BodyHandlers.ofString());
+            System.out.println(httpResponse.statusCode());
+
+        } catch (Exception e) {
+            System.out.println("message " + e);
+        }
+
+
+
+        return "returning order with id ";
     }
 
     @GET
