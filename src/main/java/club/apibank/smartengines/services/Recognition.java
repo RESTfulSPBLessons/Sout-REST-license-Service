@@ -1,13 +1,14 @@
 package club.apibank.smartengines.services;
 
-import club.apibank.smartengines.model.DocType;
-import club.apibank.smartengines.model.RecognitionResult;
+
+import club.apibank.connectors.smartengines.SmartIDReader;
+import club.apibank.connectors.smartengines.errors.BusinessError;
+import club.apibank.connectors.smartengines.errors.BusinessException;
+import club.apibank.connectors.smartengines.model.AttachmentType;
+import club.apibank.connectors.smartengines.model.DocType;
+import club.apibank.connectors.smartengines.model.RecognitionResult;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import club.apibank.smartengines.SmartIDReader;
 import java.io.IOException;
-import org.gpbd.fl.domain.AttachmentType;
-import org.gpbd.fl.domain.BusinessError;
-import org.gpbd.fl.domain.BusinessException;
 import java.util.UUID;
 
 public class Recognition {
@@ -32,10 +33,12 @@ public class Recognition {
 
 		// Шаг 4. Система создает запись в журнале распознаваний в БД. Система сохраняет ИД распознавания,
 		// полный путь до файла. ключ партнера.
-		org.gpbd.fl.domain.entities.Recognition entity = new org.gpbd.fl.domain.entities.Recognition();
+		/*Recognition entity = new Recognition();
+		entity.id
+
 		entity.setId(id);
 		entity.setScanType(scanType);
-		entity.setResult(recognitionResult);
+		entity.setResult(recognitionResult);*/
 	}
 
 
